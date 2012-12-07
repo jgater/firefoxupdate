@@ -1,0 +1,4 @@
+--reporter dot
+--ui bdd
+--compilers coffee:coffee-script
+-t 5000
