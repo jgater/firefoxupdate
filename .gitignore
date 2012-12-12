@@ -26,4 +26,4 @@ node_modules
 .nodemonignore
 
 # settings
-settings.js
+settings.coffee

@@ -8,10 +8,10 @@ util = require "util"
 settings = require "./settings" 
 
 class FirefoxUpdater extends EventEmitter
-	constructor: ->
+	constructor: (@userFolders) ->
 
 	listDirs: (callback) ->
-		callback null, []
+		fs.readdir @userFolders, callback
 
 
 module.exports = FirefoxUpdater
